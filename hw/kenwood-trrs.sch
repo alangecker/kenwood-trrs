@@ -1,0 +1,363 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AudioJack4 J1
+U 1 1 5FB57846
+P 1900 3850
+F 0 "J1" H 1857 4175 50  0000 C CNN
+F 1 "TRRS Jack" H 1857 4084 50  0000 C CNN
+F 2 "custom:TRRS-Pins" H 1900 3850 50  0001 C CNN
+F 3 "~" H 1900 3850 50  0001 C CNN
+	1    1900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FB5DD64
+P 2150 3850
+F 0 "#PWR0101" H 2150 3600 50  0001 C CNN
+F 1 "GND" V 2155 3722 50  0000 R CNN
+F 2 "" H 2150 3850 50  0001 C CNN
+F 3 "" H 2150 3850 50  0001 C CNN
+	1    2150 3850
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5600 4300
+$Comp
+L Connector:AudioJack3 J2
+U 1 1 5FB596DB
+P 5800 4300
+F 0 "J2" H 5520 4325 50  0000 R CNN
+F 1 "BAOFENG2.5SPK" H 5520 4234 50  0000 R CNN
+F 2 "custom:PJ-211A" H 5800 4300 50  0001 C CNN
+F 3 "~" H 5800 4300 50  0001 C CNN
+	1    5800 4300
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5950 2700
+Wire Wire Line
+	2150 3850 2100 3850
+Wire Wire Line
+	4550 3500 4550 3150
+Wire Wire Line
+	4550 2750 4550 3150
+Connection ~ 4550 3150
+Wire Notes Line
+	4150 2050 4900 2050
+Wire Notes Line
+	4900 2050 4900 2800
+Wire Notes Line
+	4900 2850 4150 2850
+Wire Notes Line
+	4150 2800 4150 2050
+Text Notes 4200 2150 0    31   ~ 0
+muting
+Wire Wire Line
+	5400 3150 5400 2900
+Wire Wire Line
+	5400 2900 5950 2900
+Wire Wire Line
+	4550 3150 5400 3150
+Wire Wire Line
+	5950 2800 5400 2800
+Wire Wire Line
+	5400 2800 5400 2450
+Wire Wire Line
+	5400 2450 4750 2450
+Text Label 5950 2900 2    50   ~ 0
+PTT_Mic-
+Text Label 5950 2800 2    50   ~ 0
+Mic+
+Wire Wire Line
+	2100 3750 2550 3750
+Wire Wire Line
+	2550 3750 2550 2450
+Text Label 2100 3750 0    50   ~ 0
+Mic
+Wire Wire Line
+	2100 4050 2350 4050
+Wire Wire Line
+	2350 4050 2350 4800
+Wire Wire Line
+	2100 3950 2450 3950
+Wire Wire Line
+	2450 3950 2450 4700
+$Comp
+L Device:R R3
+U 1 1 5FB909CE
+P 3750 4500
+F 0 "R3" V 3957 4500 50  0000 C CNN
+F 1 "20" V 3866 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 4500 50  0001 C CNN
+F 3 "~" H 3750 4500 50  0001 C CNN
+	1    3750 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FB94449
+P 3750 5000
+F 0 "R4" V 3957 5000 50  0000 C CNN
+F 1 "20" V 3866 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 5000 50  0001 C CNN
+F 3 "~" H 3750 5000 50  0001 C CNN
+	1    3750 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 4700 3400 4500
+Wire Wire Line
+	3400 4500 3600 4500
+Wire Wire Line
+	2450 4700 3400 4700
+Wire Wire Line
+	3600 5000 3400 5000
+Wire Wire Line
+	3400 5000 3400 4800
+Wire Wire Line
+	2350 4800 3400 4800
+Wire Wire Line
+	3900 4500 4100 4500
+Wire Wire Line
+	4100 4500 4100 4750
+Wire Wire Line
+	4100 5000 3900 5000
+Wire Wire Line
+	4100 4750 5250 4750
+Wire Wire Line
+	5250 4750 5250 4200
+Connection ~ 4100 4750
+Wire Wire Line
+	4100 4750 4100 5000
+$Comp
+L power:GND #PWR0102
+U 1 1 5FB978AA
+P 5550 4650
+F 0 "#PWR0102" H 5550 4400 50  0001 C CNN
+F 1 "GND" H 5555 4477 50  0000 C CNN
+F 2 "" H 5550 4650 50  0001 C CNN
+F 3 "" H 5550 4650 50  0001 C CNN
+	1    5550 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4650 5550 4400
+Wire Wire Line
+	5550 4400 5600 4400
+Wire Notes Line
+	3150 5250 4300 5250
+Wire Notes Line
+	4300 5250 4300 4100
+Wire Notes Line
+	4300 4100 3150 4100
+Wire Notes Line
+	3150 4100 3150 5250
+Text Notes 3200 4200 0    50   ~ 0
+mono sum\n
+Wire Wire Line
+	5250 4200 5600 4200
+Text Notes 2650 2150 0    31   ~ 0
+pull up
+Wire Notes Line
+	3050 2050 2600 2050
+Wire Notes Line
+	3050 3100 3050 2050
+Wire Notes Line
+	2600 3100 3050 3100
+Wire Notes Line
+	2600 2050 2600 3100
+Connection ~ 2800 2450
+Text Notes 3300 2150 0    31   ~ 0
+for microphone detection
+Wire Notes Line
+	3250 3450 4000 3450
+Wire Notes Line
+	3250 2050 3250 3400
+Wire Notes Line
+	4000 2050 3250 2050
+Wire Notes Line
+	4000 3400 4000 2050
+Connection ~ 3150 3000
+Wire Wire Line
+	3150 3000 3250 3000
+Wire Wire Line
+	2800 2450 3050 2450
+Connection ~ 3550 2450
+Wire Wire Line
+	2800 2700 2800 2450
+Wire Wire Line
+	2800 3000 3150 3000
+Wire Wire Line
+	2800 2900 2800 3000
+$Comp
+L Device:R_Small R1
+U 1 1 5FB637F6
+P 2800 2800
+F 0 "R1" H 2859 2846 50  0000 L CNN
+F 1 "47k" H 2859 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2800 2800 50  0001 C CNN
+F 3 "~" H 2800 2800 50  0001 C CNN
+	1    2800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3000 3150 3500
+$Comp
+L Device:R_Small R2
+U 1 1 5FB5D0D8
+P 3550 2650
+F 0 "R2" H 3609 2696 50  0000 L CNN
+F 1 "1.2k" H 3609 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3550 2650 50  0001 C CNN
+F 3 "~" H 3550 2650 50  0001 C CNN
+	1    3550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FB5C7D3
+P 3550 3200
+F 0 "#PWR0103" H 3550 2950 50  0001 C CNN
+F 1 "GND" H 3555 3027 50  0000 C CNN
+F 2 "" H 3550 3200 50  0001 C CNN
+F 3 "" H 3550 3200 50  0001 C CNN
+	1    3550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q1
+U 1 1 5FB59651
+P 3450 3000
+F 0 "Q1" H 3654 3046 50  0000 L CNN
+F 1 "BSS138" H 3654 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3650 2925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3450 3000 50  0001 L CNN
+	1    3450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2450 2800 2450
+Wire Wire Line
+	3150 3500 4550 3500
+Wire Wire Line
+	3550 2550 3550 2450
+$Comp
+L Device:C_Small C1
+U 1 1 5FBB8D66
+P 8600 2200
+F 0 "C1" H 8692 2246 50  0001 L CNN
+F 1 "C_Small" H 8692 2155 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8600 2200 50  0001 C CNN
+F 3 "~" H 8600 2200 50  0001 C CNN
+	1    8600 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2750 3550 2800
+Wire Wire Line
+	3550 2450 4350 2450
+Text Label 3600 2800 0    31   ~ 0
+N-FET_D
+Wire Wire Line
+	3600 2800 3550 2800
+Connection ~ 3550 2800
+Text Label 8400 2450 2    31   ~ 0
+N-FET_D
+Wire Wire Line
+	8400 2450 8600 2450
+Wire Wire Line
+	8600 2300 8600 2450
+Wire Wire Line
+	8600 1950 8400 1950
+Wire Wire Line
+	8600 1950 8600 2100
+$Comp
+L Device:R_Small R5
+U 1 1 5FBD0C98
+P 8600 2700
+F 0 "R5" H 8659 2746 50  0001 L CNN
+F 1 "R_Small" H 8659 2655 50  0001 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8600 2700 50  0001 C CNN
+F 3 "~" H 8600 2700 50  0001 C CNN
+	1    8600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5FBD11B1
+P 8600 2900
+F 0 "#PWR0104" H 8600 2650 50  0001 C CNN
+F 1 "GND" H 8605 2727 50  0000 C CNN
+F 2 "" H 8600 2900 50  0001 C CNN
+F 3 "" H 8600 2900 50  0001 C CNN
+	1    8600 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2900 8600 2800
+Wire Wire Line
+	8600 2600 8600 2450
+Connection ~ 8600 2450
+Wire Notes Line
+	7750 3900 9100 3900
+Wire Notes Line
+	9100 3900 9100 1550
+Wire Notes Line
+	9100 1550 7750 1550
+Wire Notes Line
+	7750 1550 7750 3900
+Text Notes 7800 1650 0    31   ~ 0
+spare for further experiments\n
+$Comp
+L Connector:AudioJack3 J3
+U 1 1 5FB58DDA
+P 6150 2800
+F 0 "J3" H 5870 2825 50  0000 R CNN
+F 1 "BAOFENG3.5MIC" H 5870 2734 50  0000 R CNN
+F 2 "custom:PJ-313-TH" H 6150 2800 50  0001 C CNN
+F 3 "~" H 6150 2800 50  0001 C CNN
+	1    6150 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5FB73234
+P 3150 2450
+F 0 "JP1" H 3150 2662 50  0001 C CNN
+F 1 "Jumper_NC_Small" H 3150 2571 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3150 2450 50  0001 C CNN
+F 3 "~" H 3150 2450 50  0001 C CNN
+	1    3150 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2450 3550 2450
+Text Label 3550 2450 0    50   ~ 0
+Mic'
+Text Label 8400 1950 2    50   ~ 0
+Mic'
+$Comp
+L Transistor_FET:BSS83P Q2
+U 1 1 5FB56285
+P 4550 2550
+F 0 "Q2" V 4892 2550 50  0000 C CNN
+F 1 "BSS83P" V 4801 2550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4750 2475 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1835997.pdf" H 4550 2550 50  0001 L CNN
+	1    4550 2550
+	0    1    -1   0   
+$EndComp
+$EndSCHEMATC
