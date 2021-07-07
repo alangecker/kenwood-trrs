@@ -1,15 +1,15 @@
 # Kenwood TRRS Adapter
-A tiny board, which allows using Kenwood headsets on smartphones.
+A tiny board, which allows using Kenwood headsets on smartphones, including the Push-To-Talk functionality.
 
-**State:** Early Prototype. Real PCB wasn't ordered yet. Don't build it without expecting issues.
 
-## Rendered PCB
+![Adapters with headsets](https://user-images.githubusercontent.com/10246027/125057716-d5715000-e0a9-11eb-8ba7-b0adcbb76c5f.png)
 
-![image](https://user-images.githubusercontent.com/10246027/99666972-fda13580-2a6b-11eb-8a01-58602c827da8.png)
+![Assembled PCB](https://user-images.githubusercontent.com/10246027/125057492-96db9580-e0a9-11eb-9df0-e667d7f9d993.png)
+
 
 
 ## Schematic
-![image](https://user-images.githubusercontent.com/10246027/99666819-cc286a00-2a6b-11eb-8c85-17d14b8a038d.png)
+![Schematic](https://user-images.githubusercontent.com/10246027/125056564-a3abb980-e0a8-11eb-83fb-2563cf299dc9.png)
 
 
 ## Bill of Materials
@@ -18,11 +18,12 @@ A tiny board, which allows using Kenwood headsets on smartphones.
 |   1 |    J2 | 2.5mm Jack PJ-211A       |
 |   1 |    J3 | 3.5mm Jack PJ-313        | 
 |   1 |    J1 | 4-pin 3.5mm Jack Cable   | cut in half
-|   1 |    Q2 | BSS83P P-Channel MOSFET  | or AO3401
-|   1 |    Q1 | BSS138 N-Channel MOSFET  | or AO3400
-|   1 |    R1 | Resistor 47kΩ 0805
-|   1 |    R2 | Resistor 1.2kΩ 0805
-|   2 | R3,R4 | Resistor 20Ω 0805
+|   1 |    Q1 | AO3400 N-Channel MOSFET  | or BSS138
+|   1 |    C1 | 100uF 6.3V RM2 5.0mm Elco
+|   1 | R1,R5 | Resistor 100kΩ 0805
+|   1 |    R4 | Resistor 2MΩ 0805
+|   2 | R2,R3 | Resistor 20Ω 0805
+|   1 |       | Heat shrink tube
 
 
 ## License
